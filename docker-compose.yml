@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+    backend:
+        image: nasua/back-image
+        container_name: back-image
+        ports:
+            - "8000:8000"
+    frontend:
+        image: nasua/front-image
+        container_name: front-image
+        ports:
+            - "80:80"
